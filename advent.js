@@ -50,7 +50,7 @@ function main()
 
 text.onblur = function (e)
 {       
-        //чфхё№ эрўшэрхЄё  ъюф getanse
+        //здесь начинается код getanse
         var work, kk;
 
         G: for (; ;) {
@@ -91,7 +91,7 @@ text.onblur = function (e)
             fl_getanse = 1;
             break;            
         }     
-    //чфхё№ чрърэўштрхЄё  ъюф getanse
+    //здесь заканчивается код getanse
 
         for (; ;) {
 
@@ -104,13 +104,13 @@ text.onblur = function (e)
             ++moves;
             oldob = 0;
 
-            if (type1 == specwr) {      // ёяхЎ-ёыютю 
+            if (type1 == specwr) {      // спец-слово 
                 rspeak(word1);
 
             } else if (type2 == specwr) {
                 rspeak(word2);
 
-            } else if (type1 == movewr) {      // яхЁхфтшцхэш  
+            } else if (type1 == movewr) {      // передвижения 
                 motion(word1);
 
             } else if (type2 == movewr) {
@@ -133,23 +133,23 @@ text.onblur = function (e)
                     }
                 }
 
-                if (type1 == actnwr) {           // фхщёЄтшх +
-                    if (type2 == objcwr) {          //    + юс"ekt 
+                if (type1 == actnwr) {           // действие +
+                    if (type2 == objcwr) {          //    + об"ekt 
                         action(word1, word2);
 
-                    } else if (oldobj != 0) {        //     + ёЄрЁ√щ юс"ekt 
+                    } else if (oldobj != 0) {        //     + старый об"ekt 
                         action(word1, oldobj);
 
-                    } else {                          //     + het юс"ekta 
+                    } else {                          //     + het об"ekta 
                         action(word1, 255);
 
                     }
-                } else if (type2 == actnwr) {      // юс"ekt + фхщёЄтшх //
+                } else if (type2 == actnwr) {      // об"ekt + действие //
                     action(word2, word1);
 
 
-                } else if (type1 == objcwr) {      // юс"ekt 
-                    rspeak(90);                     //    ўЄю фхырЄ№ c ? 
+                } else if (type1 == objcwr) {      // об"ekt 
+                    rspeak(90);                     //    что делать c ? 
                     oldob = word1;
                 }
 

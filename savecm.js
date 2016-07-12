@@ -116,7 +116,7 @@ function inicom()
   
 
    
-    //text.value = encodeURI("Ð‡âˆšÑ€");
+    //text.value = encodeURI("ôûà");
     //console.log(text(value[0].charCodeAt(0)));
 
 

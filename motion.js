@@ -1,4 +1,4 @@
-я╗┐//╨┐╨╛╨┤╨║╨╗╤О╤З╨╕╤В╤М include "..\common\advexter.h"
+﻿//подключить include "..\common\advexter.h"
 function action(verb, object)
 {
     var kk;

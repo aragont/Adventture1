@@ -1,15 +1,15 @@
-я╗┐/* ╨▓╨▓╨╛╨┤ ╤Б╨╗╨╡╨┤╤Г╤О╤Й╨╡╨│╨╛ ╨▒╨░╨╣╤В╨░ ╨╕╨╖ ╤Д╨░╨╣╨╗╨░ ╨┤╨░╨╜╨╜╤Л╤Е  a=get() */
-/* ╤Г╤Б╤В╨░╨╜╨╛╨▓ ╨╜╨░╤З╨░╨╗╤М╨╜╨╛╨│╨╛ ╨░╨┤╤А╨╡╤Б╨░ ╤З╤В╨╡╨╜╨╕╤П   iniget(adr) */
+﻿/* ввод следующего байта из файла данных  a=get() */
+/* установ начального адреса чтения   iniget(adr) */
 
-// ╨┐╨╛╨┤╨║╨╗╤О╤З╨╕╤В╤М "..\common\advexter.h"
-//╤А╨░╨▒╨╛╤В╤Г ╤Б ╤Д╨░╨╣╨╗╨░╨╝╨╕ ╨┤╨╛╨┤╨╡╨╗╨░╤В╤М
+// подключить "..\common\advexter.h"
+//работу с файлами доделать
 //var adv_data = "http://localhost:8888/data.txt"
 //var adv_data2 = "\advent\data.adv"
 
-//var cb; //╨д╨Р╨Щ╨Ы
-var  bevents, pevents; //╤Б╤В╤А╨╛╨║╨╕
+//var cb; //ФАЙЛ
+var  bevents, pevents; //строки
 
-var count = 0;//╨╛╤В╤Б╤В╤Г╨┐ ╤Б╨╕╨╝╨▓╨╛╨╗╨╛╨▓ ╨╛╤В ╨╜╨░╤З╨░╨╗╨░ ╤Д╨░╨╣╨╗╨░;
+var count = 0;//отступ символов от начала файла;
 function iniget(adr)
 {
     dataAdv = dataAdv.slice(0, 7043);
@@ -36,7 +36,7 @@ function iniget(adr)
 
 function get()
 {    
-    var c;//╤Б╨╕╨╝╨▓╨╛╨╗ 
+    var c;//символ 
     if (pevents == null)
     {     
         c = dataAdv[count];     

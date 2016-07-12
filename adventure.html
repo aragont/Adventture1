@@ -1,4 +1,4 @@
-я╗┐<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -28,7 +28,7 @@
     <script type="text/javascript" src="http://localhost:8888/jquery-2.2.3.min.js"></script>               
 </head>
 <body class="styleBackground">
-    <!--<p>╨Ь╨╡╤Б╤В╨╛ ╨┤╨╗╤П ╤Б╨╛╨┤╨╡╤А╨╢╨╕╨╝╨╛╨│╨╛</p>
+    <!--<p>Место для содержимого</p>
     <div id="txt">
         <input id="my" type="text" />
     </div>    
@@ -78,7 +78,7 @@
        
         var control = document.getElementById("your-files");
         control.addEventListener("change", function(event) {
-            // ╨Ъ╨╛╨│╨┤╨░ ╨┐╤А╨╛╨╕╤Б╤Е╨╛╨┤╨╕╤В ╨╕╨╖╨╝╨╡╨╜╨╡╨╜╨╕╨╡ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╨╛╨▓ ╤Г╨┐╤А╨░╨▓╨╗╨╡╨╜╨╕╤П, ╨╖╨╜╨░╤З╨╕╤В ╨┐╨╛╤П╨▓╨╕╨╗╨╕╤Б╤М ╨╜╨╛╨▓╤Л╨╡ ╤Д╨░╨╣╨╗╤Л
+            // Когда происходит изменение элементов управления, значит появились новые файлы
             var i = 0,
                 files = control.files,
                 len = files.length;
@@ -92,11 +92,11 @@
             var reader = new FileReader();
             reader.onload = function (event) {
                 var contents = event.target.result;
-                console.log("╨б╨╛╨┤╨╡╤А╨╢╨╕╨╝╨╛╨╡ ╤Д╨░╨╣╨╗╨░: " + contents);
+                console.log("Содержимое файла: " + contents);
             };
 
             reader.onerror = function (event) {
-                console.error("╨д╨░╨╣╨╗ ╨╜╨╡ ╨╝╨╛╨╢╨╡╤В ╨▒╤Л╤В╤М ╨┐╤А╨╛╤З╨╕╤В╨░╨╜! ╨║╨╛╨┤ " + event.target.error.code);
+                console.error("Файл не может быть прочитан! код " + event.target.error.code);
             };
 
             reader.readAsArrayBuffer(files[0]);
@@ -108,14 +108,14 @@
         console.log("Hello");
         var fs = require('fs'); 
 
-        // ╨б╤З╨╕╤В╤Л╨▓╨░╨╜╨╕╨╡ ╤Б╨╛╨┤╨╡╤А╨╢╨╕╨╝╨╛╨│╨╛ ╤Д╨░╨╣╨╗╨░ ╨▓ ╨┐╨░╨╝╤П╤В╤М
+        // Считывание содержимого файла в память
         fs.readFile("C:/node/server/public/text.adv", "utf8", function (err, buffer) {
 
-        // ╨Х╤Б╨╗╨╕ ╨┐╤А╨╛╨╕╨╖╨╛╤И╨╗╨░ ╨╛╤И╨╕╨▒╨║╨░, ╤В╨╛ ╨│╨╡╨╜╨╡╤А╨╕╤А╤Г╨╡╨╝ ╨╕╤Б╨║╨╗╤О╤З╨╡╨╜╨╕╨╡,
-        // ╨╕ ╤А╨░╨▒╨╛╤В╨░ ╨┐╤А╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤П ╨╖╨░╨▓╨╡╤А╤И╨╕╤В╤Б╤П.
+        // Если произошла ошибка, то генерируем исключение,
+        // и работа приложения завершится.
         //if (err) throw err;
 
-        // logData ╨╕╨╝╨╡╨╡╤В ╤В╨╕╨┐ Buffer, ╨┐╨╡╤А╨╡╨▓╨╛╨┤╨╕╨╝ ╨▓ ╤Б╤В╤А╨╛╨║╤Г
+        // logData имеет тип Buffer, переводим в строку
         //var text = logData
         // console.log(buffer.length + "\n");
         // console.log(buffer[10]);
@@ -182,8 +182,8 @@
     var adv_data = "http://localhost:8888/data.adv"
     //var adv_data2 = "\advent\data.adv"
 
-    //var cb; //╨д╨Р╨Щ╨Ы
-    var bevents; //╤Б╨╕╨╝╨▓╨╛╨╗╤Л
+    //var cb; //ФАЙЛ
+    var bevents; //символы
     var pevents = 0;
     var val;
     var user = "";
@@ -220,7 +220,7 @@
             // bevents = data.substr(tevent, eevent - tevent);
  
            /* if (tevent <= adr && adr < eevent) {
-                 pevents = bevents + (adr - tevent); //╤Г╨▒╤А╨░╨╗ + bevents
+                 pevents = bevents + (adr - tevent); //убрал + bevents
              } else {
                  pevents = null;
                  //return adr;
@@ -242,7 +242,7 @@
         /* bevents = data.substr(tevent, eevent - tevent);
      
          if( tevent <= adr && adr < eevent ) {
-             pevents = bevents + (adr-tevent); //╤Г╨▒╤А╨░╨╗ + bevents
+             pevents = bevents + (adr-tevent); //убрал + bevents
          } else {
              pevents = null;
              //return adr;
@@ -259,7 +259,7 @@
 /* 
     function get() {
 
-        var c; //╤Б╨╕╨╝╨▓╨╛╨╗
+        var c; //символ
         var res
         if (pevents == null) {
             //  $.get("http://localhost:8888/data.adv", function(data)

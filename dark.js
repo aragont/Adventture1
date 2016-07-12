@@ -1,11 +1,11 @@
-я╗┐//╨┐╨╛╨┤╨║╨╗╤О╤З╨╕╤В╤М ..\common\advexter.h"
+﻿//подключить ..\common\advexter.h"
 var darkflag1 = 0;
 //var carried = 1000;
  function dark()
 {
     let lamp, light;
     lamp = 0;
-    if( lamp == 0 ) {                       /* ╨╕╨╜╨╕╤Ж╨╕╨░╨╗╨╕╨╖╨░╤Ж╨╕╤П */
+    if( lamp == 0 ) {                       /* инициализация */
         lamp = ( vocab("lamp")   % 1000 );
         light = ( vocab("!light") % 1000 );
     }

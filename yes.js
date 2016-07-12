@@ -1,4 +1,4 @@
-я╗┐function yes(x)
+﻿function yes(x)
 {
     var x;
     //var c;
@@ -19,12 +19,12 @@
         {
             yes(22);
         }
-        if( c == 'y' || c == 'Y' || c == '╨┤' || c == '╨Ф' )
+        if( c == 'y' || c == 'Y' || c == 'д' || c == 'Д' )
         {
             x = 1;
             break;
         }
-        if( c == 'n' || c == 'N' || c == '╨╜' || c == '╨Э' )
+        if( c == 'n' || c == 'N' || c == 'н' || c == 'Н' )
         {
             x = 0;
             break;

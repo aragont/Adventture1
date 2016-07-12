@@ -1,15 +1,15 @@
-я╗┐/*d* === getans ===        07.01.85   version    9 */
-/* ╨▓╨▓╨╛╨┤ ╨╛╨┤╨╜╨╛╨│╨╛ ╨╕╨╗╨╕ 2-x ╤Б╨╗╨╛╨▓ */
-/* out: word1,word2 - ╨╜╨░╨╣╨┤╨╡╨╜╨╜╤Л╨╡ ╨┐╨╛ ╤Б╨╗╨╛╨▓╨░╤А╤О ╨╖╨╜╨░╤З╨╡╨╜╨╕╤П ╤Б╨╗╨╛╨▓ */
-/*      type1,type2 - ╨╕╤Е ╤В╨╕╨┐╤Л (-1 - ╤Б╨╗╨╛╨▓╨░ het) */
+﻿/*d* === getans ===        07.01.85   version    9 */
+/* ввод одного или 2-x слов */
+/* out: word1,word2 - найденные по словарю значения слов */
+/*      type1,type2 - их типы (-1 - слова het) */
 
 /* === vocab === 08.08.84 version 2 */
 /*  look up 'word' in the vocabulary ('atab' real array) */
 /*  and return its "definition" (ktab), or -1 if not found */
-/* out: vocab=-1  - ╤Б╨╗╨╛╨▓╨╛ he ╨╜╨░╨╣╨┤╨╡╨╜╨╛ */
-/*      vocab     - ╨║╨╛╨┤ ╤Б╨╗╨╛╨▓╨░ */
-//╨┐╨╛╨┤╨║╨╗╤О╤З╨╕╤В╤М "advexter.h"
-//╨┐╨╛╨┤╨║╨╗╤О╤З╨╕╤В╤М inpans
+/* out: vocab=-1  - слово he найдено */
+/*      vocab     - код слова */
+//подключить "advexter.h"
+//подключить inpans
 /*
 function vocab(word)
 {   
