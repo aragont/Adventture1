@@ -1,5 +1,5 @@
-﻿//подключить "..\common\advexter.h"
-//убрал & 0377
+я╗┐//╨┐╨╛╨┤╨║╨╗╤О╤З╨╕╤В╤М "..\common\advexter.h"
+//╤Г╨▒╤А╨░╨╗ & 0377
 function indobj() 
 {
     var obj, kk, p;
@@ -32,18 +32,18 @@ function indobj()
                     console.log("place: kk: " + kk);
 
                    // console.log("indobj4");
-                    /* подвижный об"ekt */
+                    /* ╨┐╨╛╨┤╨▓╨╕╨╢╨╜╤Л╨╣ ╨╛╨▒"ekt */
                     if ((prop(obj) & 0377) == inipro)
-                    {                            /* впервые увидел */
+                    {                            /* ╨▓╨┐╨╡╤А╨▓╤Л╨╡ ╤Г╨▓╨╕╨┤╨╡╨╗ */
                         //console.log("indobj5");
-                        _prop[obj-1] = 0     /*        сокровище */;
+                        _prop[obj-1] = 0     /*        ╤Б╨╛╨║╤А╨╛╨▓╨╕╤Й╨╡ */;
                         tally = tally - 1;
                     }
                     
                     mes(kk);
 
                 } else if (p < 0)
-                {                      /* не -"- -"- */
+                {                      /* ╨╜╨╡ -"- -"- */
                    // console.log("sdfasdsa: " + p);
                     p = - p;
                     //console.log("fixed(25): " + fixed(25));

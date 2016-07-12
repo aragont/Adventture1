@@ -50,7 +50,7 @@ function main()
 
 text.onblur = function (e)
 {       
-        //здесь начинается код getanse
+        //С‡С„С…С‘в„– СЌСЂСћС€СЌСЂС…Р„С‘В  СЉСЋС„ getanse
         var work, kk;
 
         G: for (; ;) {
@@ -91,7 +91,7 @@ text.onblur = function (e)
             fl_getanse = 1;
             break;            
         }     
-    //здесь заканчивается код getanse
+    //С‡С„С…С‘в„– С‡СЂСЉСЂСЌСћС€С‚СЂС…Р„С‘В  СЉСЋС„ getanse
 
         for (; ;) {
 
@@ -104,13 +104,13 @@ text.onblur = function (e)
             ++moves;
             oldob = 0;
 
-            if (type1 == specwr) {      // спец-слово 
+            if (type1 == specwr) {      // С‘СЏС…РЋ-С‘С‹СЋС‚СЋ 
                 rspeak(word1);
 
             } else if (type2 == specwr) {
                 rspeak(word2);
 
-            } else if (type1 == movewr) {      // передвижения 
+            } else if (type1 == movewr) {      // СЏС…РЃС…С„С‚С€С†С…СЌС€В  
                 motion(word1);
 
             } else if (type2 == movewr) {
@@ -133,23 +133,23 @@ text.onblur = function (e)
                     }
                 }
 
-                if (type1 == actnwr) {           // действие +
-                    if (type2 == objcwr) {          //    + об"ekt 
+                if (type1 == actnwr) {           // С„С…С‰С‘Р„С‚С€С… +
+                    if (type2 == objcwr) {          //    + СЋСЃ"ekt 
                         action(word1, word2);
 
-                    } else if (oldobj != 0) {        //     + старый об"ekt 
+                    } else if (oldobj != 0) {        //     + С‘Р„СЂРЃв€љС‰ СЋСЃ"ekt 
                         action(word1, oldobj);
 
-                    } else {                          //     + het об"ekta 
+                    } else {                          //     + het СЋСЃ"ekta 
                         action(word1, 255);
 
                     }
-                } else if (type2 == actnwr) {      // об"ekt + действие //
+                } else if (type2 == actnwr) {      // СЋСЃ"ekt + С„С…С‰С‘Р„С‚С€С… //
                     action(word2, word1);
 
 
-                } else if (type1 == objcwr) {      // об"ekt 
-                    rspeak(90);                     //    что делать c ? 
+                } else if (type1 == objcwr) {      // СЋСЃ"ekt 
+                    rspeak(90);                     //    СћР„СЋ С„С…С‹СЂР„в„– c ? 
                     oldob = word1;
                 }
 

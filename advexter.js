@@ -1,4 +1,4 @@
-﻿/* - parameters --- current limits: */
+я╗┐/* - parameters --- current limits: */
 
 var vocw = 550;
 var loct = 254;

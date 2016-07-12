@@ -1,4 +1,4 @@
-﻿//подключить "..\common\advexter.h"
+я╗┐//╨┐╨╛╨┤╨║╨╗╤О╤З╨╕╤В╤М "..\common\advexter.h"
 
 function descr()
 {

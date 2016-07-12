@@ -1,4 +1,4 @@
-﻿
+я╗┐
 //import str_out;
 function mscore(score, maxscore)
 {

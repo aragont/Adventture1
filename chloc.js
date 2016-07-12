@@ -1,4 +1,4 @@
-﻿//подключить ..\common\advexter.h"
+я╗┐//╨┐╨╛╨┤╨║╨╗╤О╤З╨╕╤В╤М ..\common\advexter.h"
 var drkfla;
 
 function chnloc(newloc) 
@@ -7,7 +7,7 @@ function chnloc(newloc)
     drkold = dark();
     loc = newloc;
     if( dark() && drkfla && drkold && pct(30) ) {
-        rspeak(23);                   /* свалился b колодец b temhote */
+        rspeak(23);                   /* ╤Б╨▓╨░╨╗╨╕╨╗╤Б╤П b ╨║╨╛╨╗╨╛╨┤╨╡╤Ж b temhote */
         score();        
     }
     else

@@ -1,6 +1,6 @@
-﻿//подключаем ..\common\advexter.h"
+я╗┐//╨┐╨╛╨┤╨║╨╗╤О╤З╨░╨╡╨╝ ..\common\advexter.h"
 var actfla;
-//var File F1;// нужно заменить чтение из файла на куки браузера
+//var File F1;// ╨╜╤Г╨╢╨╜╨╛ ╨╖╨░╨╝╨╡╨╜╨╕╤В╤М ╤З╤В╨╡╨╜╨╕╨╡ ╨╕╨╖ ╤Д╨░╨╣╨╗╨░ ╨╜╨░ ╨║╤Г╨║╨╕ ╨▒╤А╨░╤Г╨╖╨╡╤А╨░
 var actres;
 function events() 
 {
@@ -27,7 +27,7 @@ function ini()
    // console.log("d " + dataAdv[6403].charCodeAt(0));
 
 
-  //  if( (F1=fopen("frozen.adv","rb")) != NULL ) { //заменить на чтение из куков браузера
+  //  if( (F1=fopen("frozen.adv","rb")) != NULL ) { //╨╖╨░╨╝╨╡╨╜╨╕╤В╤М ╨╜╨░ ╤З╤В╨╡╨╜╨╕╨╡ ╨╕╨╖ ╨║╤Г╨║╨╛╨▓ ╨▒╤А╨░╤Г╨╖╨╡╤А╨░
    //     loadfr();
 
    // } else {

@@ -1,4 +1,4 @@
-﻿//подключить .\common\advexter.h" и get.js и не только
+я╗┐//╨┐╨╛╨┤╨║╨╗╤О╤З╨╕╤В╤М .\common\advexter.h" ╨╕ get.js ╨╕ ╨╜╨╡ ╤В╨╛╨╗╤М╨║╨╛
 
 var actfla;
 
@@ -15,7 +15,7 @@ function act(indx, object)
     
 
 L2000:  for(;;) 
-        {                            /* проверка следующего условия */
+        {                            /* ╨┐╤А╨╛╨▓╨╡╤А╨║╨░ ╤Б╨╗╨╡╨┤╤Г╤О╤Й╨╡╨│╨╛ ╤Г╤Б╨╗╨╛╨▓╨╕╤П */
            
             cmnd=get();
             if( cmnd==0 ) break;
@@ -33,8 +33,8 @@ L5000:              for(;;)
                         {
                             break L5000;
                         }
-                        kod=cmnd%isobj                     /*  загрузил код условия */
-                        obj = obimpl;    /*  загрузил обьект */
+                        kod=cmnd%isobj                     /*  ╨╖╨░╨│╤А╤Г╨╖╨╕╨╗ ╨║╨╛╨┤ ╤Г╤Б╨╗╨╛╨▓╨╕╤П */
+                        obj = obimpl;    /*  ╨╖╨░╨│╤А╤Г╨╖╨╕╨╗ ╨╛╨▒╤М╨╡╨║╤В */
                         console.log("ob: " + obj);
                         if (~~((cmnd % not) / isobj) != 0)
                         {
@@ -154,9 +154,9 @@ L5000:              for(;;)
                 }
 
                 
-                    kod = (cmnd % isobj);            /*  загрузил код условия */                  
-                    ntflag = (~~(cmnd / not) != 0);        /*  загрузил +/- флаг */                    
-                    obj = obimpl;                      /*  загрузил об"ekt */
+                    kod = (cmnd % isobj);            /*  ╨╖╨░╨│╤А╤Г╨╖╨╕╨╗ ╨║╨╛╨┤ ╤Г╤Б╨╗╨╛╨▓╨╕╤П */                  
+                    ntflag = (~~(cmnd / not) != 0);        /*  ╨╖╨░╨│╤А╤Г╨╖╨╕╨╗ +/- ╤Д╨╗╨░╨│ */                    
+                    obj = obimpl;                      /*  ╨╖╨░╨│╤А╤Г╨╖╨╕╨╗ ╨╛╨▒"ekt */
 
                     if (~~((cmnd % not) / isobj) != 0)
                     {
@@ -166,7 +166,7 @@ L5000:              for(;;)
                     switch(kod) 
                     {
                         case (1):
-                            obimpl = obj;                           /* об"ekt=заданному? */
+                            obimpl = obj;                           /* ╨╛╨▒"ekt=╨╖╨░╨┤╨░╨╜╨╜╨╛╨╝╤Г? */
                             condit = (obj == object);
                             if ((!condit) == (!ntflag)) break L1000;
                             cmnd = get();

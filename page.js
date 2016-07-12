@@ -1,6 +1,6 @@
-﻿//var str_in, str_out, fl_in;
+я╗┐//var str_in, str_out, fl_in;
 
-//str_out = "вывод программы";
+//str_out = "╨▓╤Л╨▓╨╛╨┤ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╤Л";
 
 var f = 0;
 var text = document.getElementById("txt");
